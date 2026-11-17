@@ -57,7 +57,7 @@ esp_ccp_weighted <- function(Y, X0, v, max_iter, tol, my_cores) {
   cache <- compute_cache_weighted2(X, Y, r_y, v, c_eps = 1) 
   MC_old <- (2/n)*cache$S_xy - (2/n^2)*cache$S_xx
   for (l in 1:max_iter) {
-    X_new <- do.call(cbind, mclapply(1:n, function(i) 
+    X_new <- do.call(cbind, parallel::mclapply(1:n, function(i) 
       Mi_weighted(i, X, Y, cache, N, n, v), mc.cores = my_cores))
     
     cache <- compute_cache_weighted2(X_new, Y, r_y, v, c_eps = 1)
