@@ -1,0 +1,9 @@
+# Generated figures and timing summaries
+outputs/*
+!outputs/.gitkeep
+
+# R session and editor artifacts
+.Rhistory
+.RData
+.Rproj.user/
+.DS_Store
