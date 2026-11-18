@@ -11,7 +11,7 @@ Peiqi Zhao, Carlos E. Rodríguez, Ramsés H. Mena, and Stephen G. Walker.
 ```text
 R/extras.r                   Weighted-support-point algorithm and helpers
 experiments/example1.r       MNIST experiment (Figures 1 and 2)
-data/Y_MNIST_digits.RDS      MNIST digits 6 and 9 matrix (upload pending)
+data/Y_MNIST_digits.RDS      MNIST digits 6 and 9 matrix
 outputs/                     Generated figures and execution times
 ```
 
